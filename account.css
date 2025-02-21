@@ -1,0 +1,113 @@
+/* Reset / Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Centered Navigation Links */
+.nav-center ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-center ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Icons on the Right (Font Awesome) */
+.nav-right {
+  position: absolute;
+  right: 2rem; /* match the nav padding */
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 24px;
+  color: #000;
+}
+
+/* BRAND NAME BELOW THE NAV */
+.brand-container {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.brand-name {
+  font-size: 3rem; /* Increased font size */
+  font-family: "Brush Script MT", cursive;
+  color: #daa520;
+}
+
+/* Center "My Account" */
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Align account details to the left */
+.account-section {
+  max-width: 800px;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Remove the border around the "My Account" section */
+.account-section > * {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.account-details,
+.order-history {
+  text-align: left;
+  padding: 10px 0;
+}
+
+.account-details h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.account-details p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.account-details a,
+.order-history a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}

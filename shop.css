@@ -1,0 +1,346 @@
+/* Reset / Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Centered Navigation Links */
+.nav-center ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-center ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Icons on the Right (Font Awesome) */
+.nav-right {
+  position: absolute;
+  right: 2rem; /* match the nav padding */
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 24px;
+  color: #000;
+}
+
+/* BRAND NAME BELOW THE NAV */
+.brand-container {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.brand-name {
+  font-size: 3rem; /* Increased font size */
+  font-family: "Brush Script MT", cursive;
+  color: #daa520;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
+.breadcrumb span {
+  color: black;
+  font-weight: bold;
+}
+
+/* Page Title */
+.shop-header {
+  text-align: left;
+  padding: 10px 40px;
+}
+.shop-header h1 {
+  font-size: 28px;
+  color: #b98b56;
+}
+
+/* Shop Categories */
+.shop-categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+.category-card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.category-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+}
+
+/* Shop Filter Section */
+.shop-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.shop-filter p {
+  font-size: 14px;
+}
+.filter-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.view-toggle button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.view-toggle .active {
+  background-color: #000;
+}
+.sort-dropdown {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.filter-btn {
+  background-color: #b98b56;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Shop Category Section */
+.shop-categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.shop-category {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.shop-category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product Grid Layout */
+.product-section {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: gray;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  border: none;
+  background: #d4af37;
+  color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  background: #b08d2d;
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  padding: 40px 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  color: #232332;
+  font-weight: bold;
+}
+
+.footer-info h4 {
+  font-size: 16px;
+  color: #232332;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-info ul li {
+  margin: 5px 0;
+}
+
+.footer-info ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.newsletter h4 {
+  font-size: 16px;
+  color: #232332;
+  font-weight: bold;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.subscribe input {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+  background: #f5f5f5;
+  color: #777;
+}
+
+.subscribe button {
+  background: #c49b66;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background: #b38b5d;
+}
+
+.newsletter p {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+}
