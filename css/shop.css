@@ -43,6 +43,10 @@ body {
   gap: 1rem;
 }
 
+.logo img {
+  height: 70px;
+}
+
 .icon {
   font-size: 24px;
   color: #000;
