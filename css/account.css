@@ -66,6 +66,13 @@ body {
   color: #daa520;
 }
 
+.back-button {
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 100px;
+  color: black;
+}
+
 /* Center "My Account" */
 main h2 {
   text-align: center;
