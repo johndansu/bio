@@ -264,10 +264,14 @@ body {
   align-items: flex-start;
 }
 
-.footer-left h3 {
+.footer-left a h3 {
   font-size: 24px;
-  color: #232332;
+  color: #d4af37;
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
 }
 
 .footer-info h4 {
@@ -303,6 +307,7 @@ body {
 .social-icons a {
   margin-right: 10px;
   display: inline-block;
+  color: #d4af37;
 }
 
 .social-icons img {
