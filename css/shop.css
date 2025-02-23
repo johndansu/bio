@@ -13,6 +13,7 @@ body {
 }
 
 /* NAVIGATION BAR */
+/* NAVIGATION BAR */
 .navbar {
   position: relative;
   display: flex;
@@ -55,6 +56,32 @@ body {
   color: #d4af37;
 }
 
+/* Responsive Header Adjustments */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .nav-center ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .nav-right {
+    position: static;
+    margin-top: 1rem;
+  }
+  /* Optionally, adjust logo size for small screens */
+  .logo img {
+    height: 50px;
+  }
+}
+
+.icon {
+  font-size: 24px;
+  color: #d4af37;
+}
+
 /* BRAND NAME BELOW THE NAV */
 .brand-container {
   text-align: center;
@@ -88,7 +115,7 @@ body {
   color: #b98b56;
 }
 
-/* Shop Categories */
+/* Original Shop Categories (for large screens) */
 .shop-categories {
   display: flex;
   justify-content: center;
@@ -107,6 +134,36 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.category-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+}
+
+/* Responsive adjustments for Shop Categories on small screens */
+@media (max-width: 767px) {
+  .shop-categories {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  /* Allow two cards per row, maintaining the original 200:250 ratio */
+  .category-card {
+    flex: 1 1 calc(50% - 10px);
+    width: auto;
+    height: auto;
+    max-width: 200px; /* never exceed the original size */
+    aspect-ratio: 200 / 250; /* preserve the original proportion */
+  }
+}
+
 .category-overlay {
   position: absolute;
   bottom: 10px;
@@ -355,4 +412,68 @@ a {
   font-size: 12px;
   color: gray;
   margin-top: 5px;
+}
+
+/* Responsive Media Queries */
+
+/* Medium screens (tablets, max-width: 991px) */
+@media (max-width: 991px) {
+  /* Adjust product grid to use auto-fit columns */
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Small screens (mobile, max-width: 767px) */
+@media (max-width: 767px) {
+  /* Navbar adjustments */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .nav-center ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .nav-right {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  /* Shop Header */
+  .shop-header {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  /* Shop Filter adjustments */
+  .shop-filter {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px;
+  }
+
+  /* Product Section */
+  .product-section {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* Footer adjustments */
+  .footer {
+    padding: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-left,
+  .footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }

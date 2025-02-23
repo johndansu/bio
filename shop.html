@@ -2,207 +2,219 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Ensures proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hunny Dee's closet - Shop</title>
-    <link rel="icon" href= images/favicon.ico key="favicon" type="image/icon
-    type" />
+    <link rel="icon" href="images/favicon.ico" type="image/icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <!-- Your existing external CSS is still loaded -->
     <link rel="stylesheet" href="css/shop.css" />
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
   </head>
   <body>
-    <!-- Header & Navigation -->
+    <!-- Header Section -->
     <header>
-      <nav class="navbar">
-        <!-- Centered Navigation Links -->
-        <div class="nav-center">
-          <ul>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      <div class="container">
+        <nav class="navbar">
+          <div class="nav-center">
+            <ul>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <a href="account.html"><i class="fa-solid fa-user icon"></i></a>
+            <a href="checkout.html"
+              ><i class="fa-solid fa-cart-shopping icon"></i
+            ></a>
+          </div>
+        </nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/LOGO.JPG" alt="Hunny Dee's Closet"
+          /></a>
         </div>
-        <!-- Icons on the Right -->
-        <div class="nav-right">
-          <a href="account.html"><i class="fa-solid fa-user icon"></i></a>
-          <a href="checkout.html"
-            ><i class="fa-solid fa-cart-shopping icon"></i
-          ></a>
-        </div>
-      </nav>
-
-      <!-- Brand Name Below the Navigation -->
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/LOGO.JPG" alt="Hunny Dee's Closet" />
-        </a>
       </div>
     </header>
 
-    <!-- Breadcrumb Navigation -->
-    <div class="breadcrumb">
-      <p><span>Home</span> > Shop</p>
+    <!-- Main Content -->
+    <div class="container">
+      <div class="breadcrumb">
+        <p><span>Home</span> &gt; Shop</p>
+      </div>
+      <div class="shop-header">
+        <h1>Shop</h1>
+      </div>
+
+      <!-- Shop Categories -->
+      <section class="shop-categories">
+        <div class="category-card">
+          <img src="images/anomaly-WWesmHEgXDs-unsplash.jpg" alt="Cloths" />
+          <div class="category-overlay">
+            <h3>CLOTHS</h3>
+            <p>5 Items</p>
+          </div>
+        </div>
+        <div class="category-card">
+          <img
+            src="images/burgess-milner-OYYE4g-I5ZQ-unsplash.jpg"
+            alt="Cloths"
+          />
+          <div class="category-overlay">
+            <h3>CLOTHS</h3>
+            <p>5 Items</p>
+          </div>
+        </div>
+        <div class="category-card">
+          <img
+            src="images/keagan-henman-Won79_9oUEk-unsplash.jpg"
+            alt="Cloths"
+          />
+          <div class="category-overlay">
+            <h3>CLOTHS</h3>
+            <p>5 Items</p>
+          </div>
+        </div>
+        <div class="category-card">
+          <img src="images/mnz-ToLMORRb97Q-unsplash.jpg" alt="Cloths" />
+          <div class="category-overlay">
+            <h3>CLOTHS</h3>
+            <p>5 Items</p>
+          </div>
+        </div>
+        <div class="category-card">
+          <img
+            src="images/felipe-galvan-AhfrA5VQNpM-unsplash.jpg"
+            alt="Cloths"
+          />
+          <div class="category-overlay">
+            <h3>CLOTHS</h3>
+            <p>5 Items</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shop Filters -->
+      <div class="shop-filter">
+        <p>Showing all 12 results</p>
+        <div class="filter-options">
+          <div class="view-toggle">
+            <button class="grid-view active"></button>
+            <button class="list-view"></button>
+          </div>
+          <select class="sort-dropdown">
+            <option>Popularity</option>
+            <option>Newest</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+          <button class="filter-btn">Filter</button>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <section class="product-section">
+        <div class="product-grid">
+          <div class="product-card">
+            <a href="product.html">
+              <img
+                src="images/classic-11-12-handbag-dark-brown-wool-tweed-gold-tone-metal-wool-tweed-gold-tone-metal-packshot-artistique-vue1-a01112b18200nzl83-9547695685662.jpg.avif"
+                alt="Bag"
+              />
+            </a>
+            <h3>Graphic Design</h3>
+            <p>Bag Department</p>
+            <p class="product-price">$6.48</p>
+          </div>
+          <div class="product-card">
+            <a href="product.html">
+              <img
+                src="images/classic-11-12-handbag-light-pink-black-beige-ecru-wool-tweed-gold-tone-metal-wool-tweed-gold-tone-metal-packshot-artistique-vue1-a01112b18351nzv35-9547695423518.jpg.avif"
+                alt="Bag"
+              />
+            </a>
+            <h3>Graphic Design</h3>
+            <p>Bag Department</p>
+            <p class="product-price">$6.48</p>
+          </div>
+          <div class="product-card">
+            <a href="product.html">
+              <img
+                src="images/classic-11-12-handbag-black-light-blue-gray-wool-tweed-ruthenium-finish-metal-wool-tweed-ruthenium-finish-metal-packshot-artistique-vue1-a01112b18202nzu95-9547696668702.jpg.avif"
+                alt="Bag"
+              />
+            </a>
+            <h3>Graphic Design</h3>
+            <p>Bag Department</p>
+            <p class="product-price">$6.48</p>
+          </div>
+          <div class="product-card">
+            <a href="product.html">
+              <img src="images/8BR600ARBBF1NPG_01.jpg" alt="Bag" />
+            </a>
+            <h3>Graphic Design</h3>
+            <p>Bag Department</p>
+            <p class="product-price">$6.48</p>
+          </div>
+          <div class="product-card">
+            <a href="product.html">
+              <img
+                src="images/slingbacks-black-goatskin-grosgrain-goatskin-grosgrain-packshot-artistique-vue1-g31318y5000694305-9543236878366.jpg.avif"
+                alt="Shoes"
+              />
+            </a>
+            <h3>Graphic Design</h3>
+            <p>Shoe Department</p>
+            <p class="product-price">$6.48</p>
+          </div>
+          <div class="product-card">
+            <a href="product.html">
+              <img
+                src="images/slingbacks-beige-black-goatskin-grosgrain-goatskin-grosgrain-packshot-artistique-vue1-g31318y50006c8378-9543237697566.jpg.avif"
+                alt="Shoes"
+              />
+            </a>
+            <h3>Graphic Design</h3>
+            <p>Shoe Department</p>
+            <p class="product-price">$6.48</p>
+          </div>
+          <div class="product-card">
+            <a href="product.html">
+              <img
+                src="images/slingbacks-black-printed-lambskin-patent-calfskin-printed-lambskin-patent-calfskin-packshot-artistique-vue1-g31318b1850294305-9547690475550.jpg.avif"
+                alt="Bag"
+              />
+            </a>
+            <h3>Graphic Design</h3>
+            <p>Shoe Department</p>
+            <p class="product-price">$6.48</p>
+          </div>
+          <div class="product-card">
+            <a href="product.html">
+              <img src="images/9543236943902.webp" alt="Bag" />
+            </a>
+            <h3>Graphic Design</h3>
+            <p>Shoe Department</p>
+            <p class="product-price">$6.48</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button>First</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Next</button>
+      </div>
     </div>
 
-    <!-- Page Title -->
-    <div class="shop-header">
-      <h1>Shop</h1>
-    </div>
-
-    <!-- Shop Categories Section -->
-    <section class="shop-categories">
-      <div class="category-card">
-        <img src="images/anomaly-WWesmHEgXDs-unsplash.jpg" alt="Cloths" />
-        <div class="category-overlay">
-          <h3>CLOTHS</h3>
-          <p>5 Items</p>
-        </div>
-      </div>
-      <div class="category-card">
-        <img
-          src="images/burgess-milner-OYYE4g-I5ZQ-unsplash.jpg"
-          alt="Cloths"
-        />
-        <div class="category-overlay">
-          <h3>CLOTHS</h3>
-          <p>5 Items</p>
-        </div>
-      </div>
-      <div class="category-card">
-        <img src="images/keagan-henman-Won79_9oUEk-unsplash.jpg" alt="Cloths" />
-        <div class="category-overlay">
-          <h3>CLOTHS</h3>
-          <p>5 Items</p>
-        </div>
-      </div>
-      <div class="category-card">
-        <img src="images/mnz-ToLMORRb97Q-unsplash.jpg" alt="Cloths" />
-        <div class="category-overlay">
-          <h3>CLOTHS</h3>
-          <p>5 Items</p>
-        </div>
-      </div>
-      <div class="category-card">
-        <img src="images/felipe-galvan-AhfrA5VQNpM-unsplash.jpg" alt="Cloths" />
-        <div class="category-overlay">
-          <h3>CLOTHS</h3>
-          <p>5 Items</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Shop Filters and Sorting -->
-    <div class="shop-filter">
-      <p>Showing all 12 results</p>
-      <div class="filter-options">
-        <div class="view-toggle">
-          <button class="grid-view active"></button>
-          <button class="list-view"></button>
-        </div>
-        <select class="sort-dropdown">
-          <option>Popularity</option>
-          <option>Newest</option>
-          <option>Price: Low to High</option>
-          <option>Price: High to Low</option>
-        </select>
-        <button class="filter-btn">Filter</button>
-      </div>
-    </div>
-    <!-- Product Grid -->
-    <section class="product-section">
-      <div class="product-grid">
-        <div class="product-card">
-          <a href="product.html"
-            ><img
-              src="images/classic-11-12-handbag-dark-brown-wool-tweed-gold-tone-metal-wool-tweed-gold-tone-metal-packshot-artistique-vue1-a01112b18200nzl83-9547695685662.jpg.avif"
-              alt="Bag"
-          /></a>
-          <h3>Graphic Design</h3>
-          <p>Bag Department</p>
-          <p class="product-price">$6.48</p>
-        </div>
-        <div class="product-card">
-          <a href="product.html"
-            ><img
-              src="images/classic-11-12-handbag-light-pink-black-beige-ecru-wool-tweed-gold-tone-metal-wool-tweed-gold-tone-metal-packshot-artistique-vue1-a01112b18351nzv35-9547695423518.jpg.avif"
-              alt="Bag"
-          /></a>
-          <h3>Graphic Design</h3>
-          <p>Bag Department</p>
-          <p class="product-price">$6.48</p>
-        </div>
-        <div class="product-card">
-          <a href="product.html"
-            ><img
-              src="images/classic-11-12-handbag-black-light-blue-gray-wool-tweed-ruthenium-finish-metal-wool-tweed-ruthenium-finish-metal-packshot-artistique-vue1-a01112b18202nzu95-9547696668702.jpg.avif"
-              alt="Bag"
-          /></a>
-          <h3>Graphic Design</h3>
-          <p>Bag Department</p>
-          <p class="product-price">$6.48</p>
-        </div>
-        <div class="product-card">
-          <a href="product.html"
-            ><img src="images/8BR600ARBBF1NPG_01.jpg" alt="Bag"
-          /></a>
-          <h3>Graphic Design</h3>
-          <p>Bag Department</p>
-          <p class="product-price">$6.48</p>
-        </div>
-        <div class="product-card">
-          <a href="product.html"
-            ><img
-              src="images/slingbacks-black-goatskin-grosgrain-goatskin-grosgrain-packshot-artistique-vue1-g31318y5000694305-9543236878366.jpg.avif"
-              alt="Shoes"
-          /></a>
-          <h3>Graphic Design</h3>
-          <p>Shoe Department</p>
-          <p class="product-price">$6.48</p>
-        </div>
-        <div class="product-card">
-          <a href="product.html"
-            ><img
-              src="images/slingbacks-beige-black-goatskin-grosgrain-goatskin-grosgrain-packshot-artistique-vue1-g31318y50006c8378-9543237697566.jpg.avif"
-              alt="Shoes"
-          /></a>
-          <h3>Graphic Design</h3>
-          <p>Shoe Department</p>
-          <p class="product-price">$6.48</p>
-        </div>
-        <div class="product-card">
-          <a href="product.html"
-            ><img
-              src="images/slingbacks-black-printed-lambskin-patent-calfskin-printed-lambskin-patent-calfskin-packshot-artistique-vue1-g31318b1850294305-9547690475550.jpg.avif"
-              alt="Bag"
-          /></a>
-          <h3>Graphic Design</h3>
-          <p>Shoe Department</p>
-          <p class="product-price">$6.48</p>
-        </div>
-        <div class="product-card">
-          <a href="product.html"
-            ><img src="images/9543236943902.webp" alt="Bag"
-          /></a>
-          <h3>Graphic Design</h3>
-          <p>Shoe Department</p>
-          <p class="product-price">$6.48</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pagination -->
-    <div class="pagination">
-      <button>First</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>Next</button>
-    </div>
-
-    <!-- Footer -->
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-left">
@@ -215,18 +227,12 @@
             </ul>
           </div>
         </div>
-
         <div class="footer-right">
           <div class="social-icons">
-            <a href="#"
-              ><i class="fa-brands fa-facebook-f" alt="Facebook"></i>
-            </a>
-            <a href="#"
-              ><i class="fa-brands fa-instagram" alt="Instagram"></i
-            ></a>
-            <a href="#"><i class="fab fa-twitter" alt="Twitter"></i> </a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
-
           <div class="newsletter">
             <h4>Get In Touch</h4>
             <div class="subscribe">
